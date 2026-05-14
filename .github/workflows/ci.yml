@@ -1,4 +1,4 @@
-name: "dropwizard-ci-pipeline"
+name: "dropwizard-ci-1"
 
 on:
   push:
