@@ -1,13 +1,20 @@
-name: "dropwizard-ci-1"
+name: "dropwizard-ci-pipeline"
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps:
+
       - uses: actions/checkout@v1
       - name: Install Java
         uses: actions/setup-java@v1

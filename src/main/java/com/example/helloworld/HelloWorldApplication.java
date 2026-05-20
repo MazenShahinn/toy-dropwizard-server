@@ -5,6 +5,18 @@ import com.example.helloworld.resources.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+/**
+ * My first Dropwizard application! 
+ * Exicited to learn more about Dropwizard and how to build RESTful web services with it.
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
     public static void main(String[] args) throws Exception {
