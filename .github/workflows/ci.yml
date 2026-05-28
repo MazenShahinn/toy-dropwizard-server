@@ -10,10 +10,10 @@ system-test:
  uses: actions/setup-python@v1
  with:
  python-version: '3.7'
- - run: python3 -m pytest requests
+ - run: pip install pytest requests
  - name: Run system tests
  working-directory:
- run: python3 -m pytest 
+ run: pytest 
  - name: Bring server down
  working-directory:
  run: docker-compose down
