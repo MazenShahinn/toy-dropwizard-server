@@ -28,9 +28,9 @@ jobs:
         working-directory: ./
         run: docker compose up -d --build
       - name: set up python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.7'
+          python-version: '3.7.17'
       - name: Install dependencies
         run: pip install pytest requests
       - name: Run system tests
